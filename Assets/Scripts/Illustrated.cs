@@ -7,6 +7,7 @@ public class Illustrated : MonoBehaviour
 {
     GameManager gm;
     public string[] strArray = new string[13];
+    public bool[] boolArray = new bool[13];
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Illustrated : MonoBehaviour
 
         for (int count = 0; count < 13; count++)
         {
-
+            gm.flower[count].get = boolArray[count];
 
             if (gm.flower[count].get)
             {
