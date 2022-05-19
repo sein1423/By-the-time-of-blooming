@@ -6,41 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Illustrated : MonoBehaviour
 {
-    private static Illustrated _instance;
-    public static Illustrated Instance
-    {
-        get
-        {
-            if (!_instance)
-            {
-                _instance = FindObjectOfType(typeof(Illustrated)) as Illustrated;
-
-                if (_instance == null)
-                    Debug.Log("no Singleton obj");
-            }
-            return _instance;
-        }
-    }
-
-    private void Awake()
-    {
-        if (_instance == null)
-        {
-            _instance = this;
-        }
-        else if (_instance != this)
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);
-    }
-
+    
 
 
     GameManager gm;
     public string[] strArray = new string[13];
-    public bool[] boolArray = new bool[13];
     public struct Flower
     {
         public GameObject flowerObject;
@@ -79,7 +49,7 @@ public class Illustrated : MonoBehaviour
 
         for (int count = 0; count < 13; count++)
         {
-            flower[count].get = boolArray[count];
+            flower[count].get = gm.boolArray[count];
 
             if (flower[count].get)
             {
@@ -98,4 +68,6 @@ public class Illustrated : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+
 }

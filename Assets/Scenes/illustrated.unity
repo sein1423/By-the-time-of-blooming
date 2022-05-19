@@ -390,6 +390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa11a73d5b9343045a425a20d7fcbcd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  illust: {fileID: 0}
+  boolArray: 01000100010001000100010001
 --- !u!4 &144136120
 Transform:
   m_ObjectHideFlags: 0
@@ -3510,7 +3512,6 @@ MonoBehaviour:
   - 
   - 
   - 
-  boolArray: 00010001000100010001000100
 --- !u!4 &2002848983
 Transform:
   m_ObjectHideFlags: 0

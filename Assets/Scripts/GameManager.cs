@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,10 +37,10 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public bool[] boolArray = new bool[13];
     // Start is called before the first frame update
     void Start()
     {
-        illust = GameObject.Find("illustratedManager").GetComponent<Illustrated>();
     }
 
     // Update is called once per frame
@@ -51,5 +52,25 @@ public class GameManager : MonoBehaviour
     public void GetFlower(int number)
     {
         illust.flower[number].get = true;
+    }
+
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "illustrated")
+        {
+            illust = GameObject.Find("illustratedManager").GetComponent<Illustrated>();
+
+        }
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
