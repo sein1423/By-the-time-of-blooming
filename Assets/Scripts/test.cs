@@ -21,4 +21,9 @@ public class test : MonoBehaviour
     {
         SceneManager.LoadScene(4);
     }
+
+    public void goShop()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
