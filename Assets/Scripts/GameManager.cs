@@ -74,4 +74,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
+
+    public void GameStart()
+    {
+        SceneManager.LoadScene("counter");
+    }
 }
