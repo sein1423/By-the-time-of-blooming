@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     public Illustrated illust;
     public bool[] boolArray = new bool[13];
+    //나중에 Int랑 속성값 추가하기
     private void Awake()
     {
         if(_instance == null)
