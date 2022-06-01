@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class test2 : MonoBehaviour
 {
-    public Button btnCa, btnDa, btnDe, btnEu, btnFr, btnGl, btnJa, btnMa, btnRo, btnSs, btnSu, btnVi, btnYa;
+    public Button btnCa, btnDa, btnDe, btnEu, btnFr, btnGl, btnJa, btnMa, btnRo, btnSs, btnSu, btnVi, btnYa, btnArrow;
     public GameObject carnation_pre, daisy_pre, del_pre, eun_pre, freesia_pre, glra_pre, jahng_pre, marry_pre, rose_pre, ssug_pre, susun_pre, violet_pre, yang_pre;
     int max = 5;        //꽃 최대 개수
     int count = 0;      //꽃 개수
@@ -33,6 +33,8 @@ public class test2 : MonoBehaviour
         btnSu.onClick.AddListener(btnSu_clik);
         btnVi.onClick.AddListener(btnVi_clik);
         btnYa.onClick.AddListener(btnYa_clik);
+
+        btnArrow.onClick.AddListener(btnArrow_clik);    //화살표 클릭
         
         
         
@@ -170,6 +172,13 @@ public class test2 : MonoBehaviour
         yan.transform.position = new Vector3(px,py,0);
         yan.transform.SetSiblingIndex(layer);
         count++;
+    }
+
+    void btnArrow_clik()
+    {
+        Debug.Log("다음");
+        btnCa.SetActive(false);
+
     }
     
 
