@@ -14,7 +14,7 @@ public class make : MonoBehaviour
     
     void Start()
     {
-        carnation_btn = GameObject.Find("canation_btn").GetComponent<Button>();
+        carnation_btn = GetComponent<Button>();
         carnation_btn.onClick.AddListener(carnation);
         daisy_btn = GetComponent<Button>();
         daisy_btn.onClick.AddListener(daisy);
