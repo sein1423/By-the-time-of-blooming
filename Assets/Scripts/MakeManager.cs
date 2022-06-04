@@ -14,8 +14,6 @@ public class MakeManager : MonoBehaviour
     public GameObject radt_pre, orangt_pre, greent_pre, bluet_pre, puplet_pre, radb_pre, orangb_pre, greenb_pre, blueb_pre, pupleb_pre;
     //꽃다발 프리팹
     int max = 4;        //꽃 최대 개수
-    public Button btnCa, btnDa, btnDe, btnEu, btnFr, btnGl, btnJa, btnMa, btnRo, btnSs, btnSu, btnVi, btnYa, btnArrow;
-    public GameObject carnation_pre, daisy_pre, del_pre, eun_pre, freesia_pre, glra_pre, jahng_pre, marry_pre, rose_pre, ssug_pre, susun_pre, violet_pre, yang_pre;
     int count = 0;      //꽃 개수
     float px = 0, py = 0;     //꽃 위치 변수
     int rx = 0, ry =0;      //꽃 회전 변수
@@ -346,7 +344,6 @@ public class MakeManager : MonoBehaviour
         bool flower_btn = false;
         bool color_btn = true;
         Debug.Log("다음");
-<<<<<<< HEAD:Assets/Scripts/test2.cs
         //꽃 버튼 사라짐
         G_btnCa.SetActive(flower_btn);
         G_btnDa.SetActive(flower_btn);
@@ -374,9 +371,6 @@ public class MakeManager : MonoBehaviour
         G_btnPurple.SetActive(color_btn);
 
         G_btnCom.SetActive(color_btn);
-=======
-        //btnCa.SetActive(false);
->>>>>>> 01a067f311535ffac7914a9f54a46eadc32476fb:Assets/Scripts/MakeManager.cs
 
     }
 
