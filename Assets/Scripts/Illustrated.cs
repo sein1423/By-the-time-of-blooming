@@ -39,7 +39,7 @@ public class Illustrated : MonoBehaviour
 
         for (int count = 0; count < 13; count++)
         {
-            flower[count].get = gm.boolArray[count];
+            flower[count].get = gm.flower[count].get;
         }
     }
 
@@ -52,12 +52,12 @@ public class Illustrated : MonoBehaviour
             if (flower[count].get)
             {
                 flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
-                flower[count].flowerObject.transform.GetChild(1).gameObject.GetComponent<Text>().text = "È¹µæ";//strArray[count];
+                flower[count].flowerObject.transform.GetChild(1).gameObject.GetComponent<Text>().text = gm.flower[count].count.ToString() + "°³ ¼ÒÁö";//strArray[count];
             }
             else
             {
                 flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(20, 20, 20, 150);
-                flower[count].flowerObject.transform.GetChild(1).gameObject.GetComponent<Text>().text = "????";
+                flower[count].flowerObject.transform.GetChild(1).gameObject.GetComponent<Text>().text = "È¹µæ ¿©ºÎX";
             }
         }
 
