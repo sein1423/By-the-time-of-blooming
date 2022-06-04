@@ -22,7 +22,13 @@ public class GameManager : MonoBehaviour
     }
 
     public Illustrated illust;
-    public bool[] boolArray = new bool[13];
+    public struct flowerstate{
+        public string name;
+        public bool get;
+        public int count;
+    }
+
+    public flowerstate[] flower = new flowerstate[13];
     //나중에 Int랑 속성값 추가하기
     private void Awake()
     {
@@ -46,7 +52,7 @@ public class GameManager : MonoBehaviour
         
         for (int count = 0; count < 13; count++)
         {
-            boolArray[count] = false;
+            flower[count].get = false;
         }
     }
 

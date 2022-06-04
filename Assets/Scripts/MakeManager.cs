@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class test2 : MonoBehaviour
+public class MakeManager : MonoBehaviour
 {
     public Button btnCa, btnDa, btnDe, btnEu, btnFr, btnGl, btnJa, btnMa, btnRo, btnSs, btnSu, btnVi, btnYa, btnArrow;
     public GameObject carnation_pre, daisy_pre, del_pre, eun_pre, freesia_pre, glra_pre, jahng_pre, marry_pre, rose_pre, ssug_pre, susun_pre, violet_pre, yang_pre;
-    int max = 5;        //꽃 최대 개수
     int count = 0;      //꽃 개수
     int px = 0, py = 0;     //꽃 위치 변수
     int rx = 0, ry =0;      //꽃 회전 변수
@@ -177,7 +176,7 @@ public class test2 : MonoBehaviour
     void btnArrow_clik()
     {
         Debug.Log("다음");
-        btnCa.SetActive(false);
+        //btnCa.SetActive(false);
 
     }
     

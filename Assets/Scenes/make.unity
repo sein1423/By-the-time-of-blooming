@@ -366,6 +366,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190318485}
   m_CullTransparentMesh: 1
+--- !u!1 &218435039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218435040}
+  - component: {fileID: 218435041}
+  m_Layer: 0
+  m_Name: MakeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &218435040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218435039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 283, y: -50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &218435041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218435039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909dc229aa503c74d88fd05b9481fc68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnCa: {fileID: 1742188571}
+  btnDa: {fileID: 1842090114}
+  btnDe: {fileID: 1590368807}
+  btnEu: {fileID: 274648744}
+  btnFr: {fileID: 939959480}
+  btnGl: {fileID: 1997733005}
+  btnJa: {fileID: 190318487}
+  btnMa: {fileID: 427567315}
+  btnRo: {fileID: 1419918874}
+  btnSs: {fileID: 72520250}
+  btnSu: {fileID: 1691604285}
+  btnVi: {fileID: 370345555}
+  btnYa: {fileID: 1466125802}
+  btnArrow: {fileID: 475737858}
+  carnation_pre: {fileID: 5976646022873782110, guid: e85c21ef7ae12d54380fa0e4712806e1,
+    type: 3}
+  daisy_pre: {fileID: 7166719318387362147, guid: cb1fe50c5b871a943be08961a7bd064b,
+    type: 3}
+  del_pre: {fileID: 5040262027875329278, guid: 34dfa152254603f4ea88df6e6770c22e, type: 3}
+  eun_pre: {fileID: 1791272883450638183, guid: ae003b63dd2b8014e8e1fd752a03d24c, type: 3}
+  freesia_pre: {fileID: 2814194809415807822, guid: 74a2429e85c19814cbf9eb48f7f34925,
+    type: 3}
+  glra_pre: {fileID: 719055857297569669, guid: eca68c33178069047bb6b5301bcc5401, type: 3}
+  jahng_pre: {fileID: 7980765023668842294, guid: 94a9eb6aefc7a7d44a770d09591086bd,
+    type: 3}
+  marry_pre: {fileID: 775874919544505446, guid: 82d913f44230dcd43979aaf6ccdc89f2,
+    type: 3}
+  rose_pre: {fileID: 8891379198831913816, guid: db925ea4358584842b5c09e149777815,
+    type: 3}
+  ssug_pre: {fileID: 3992252593440988502, guid: 10e9a582da2271a4f96be1ff7b3f3b3f,
+    type: 3}
+  susun_pre: {fileID: 1492087353116224976, guid: 37bc81f22ed491a4d8525f0669447ae1,
+    type: 3}
+  violet_pre: {fileID: 5711293796537928713, guid: 05cead7212c567b43b9e0667ca0d4485,
+    type: 3}
+  yang_pre: {fileID: 2649218407742296963, guid: 05cc69f7848802a4aaf63653d26b9b07,
+    type: 3}
 --- !u!1 &226087042
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +619,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2721,7 +2800,6 @@ GameObject:
   - component: {fileID: 1742188573}
   - component: {fileID: 1742188572}
   - component: {fileID: 1742188571}
-  - component: {fileID: 1742188574}
   m_Layer: 5
   m_Name: carnation_btn
   m_TagString: Untagged
@@ -2843,55 +2921,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742188569}
   m_CullTransparentMesh: 1
---- !u!114 &1742188574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742188569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 909dc229aa503c74d88fd05b9481fc68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btnCa: {fileID: 1742188571}
-  btnDa: {fileID: 1842090114}
-  btnDe: {fileID: 1590368807}
-  btnEu: {fileID: 274648744}
-  btnFr: {fileID: 939959480}
-  btnGl: {fileID: 1997733005}
-  btnJa: {fileID: 190318487}
-  btnMa: {fileID: 427567315}
-  btnRo: {fileID: 1419918874}
-  btnSs: {fileID: 72520250}
-  btnSu: {fileID: 1691604285}
-  btnVi: {fileID: 370345555}
-  btnYa: {fileID: 1466125802}
-  btnArrow: {fileID: 475737858}
-  carnation_pre: {fileID: 5976646022873782110, guid: e85c21ef7ae12d54380fa0e4712806e1,
-    type: 3}
-  daisy_pre: {fileID: 7166719318387362147, guid: cb1fe50c5b871a943be08961a7bd064b,
-    type: 3}
-  del_pre: {fileID: 5040262027875329278, guid: 34dfa152254603f4ea88df6e6770c22e, type: 3}
-  eun_pre: {fileID: 1791272883450638183, guid: ae003b63dd2b8014e8e1fd752a03d24c, type: 3}
-  freesia_pre: {fileID: 2814194809415807822, guid: 74a2429e85c19814cbf9eb48f7f34925,
-    type: 3}
-  glra_pre: {fileID: 719055857297569669, guid: eca68c33178069047bb6b5301bcc5401, type: 3}
-  jahng_pre: {fileID: 7980765023668842294, guid: 94a9eb6aefc7a7d44a770d09591086bd,
-    type: 3}
-  marry_pre: {fileID: 775874919544505446, guid: 82d913f44230dcd43979aaf6ccdc89f2,
-    type: 3}
-  rose_pre: {fileID: 8891379198831913816, guid: db925ea4358584842b5c09e149777815,
-    type: 3}
-  ssug_pre: {fileID: 3992252593440988502, guid: 10e9a582da2271a4f96be1ff7b3f3b3f,
-    type: 3}
-  susun_pre: {fileID: 1492087353116224976, guid: 37bc81f22ed491a4d8525f0669447ae1,
-    type: 3}
-  violet_pre: {fileID: 5711293796537928713, guid: 05cead7212c567b43b9e0667ca0d4485,
-    type: 3}
-  yang_pre: {fileID: 2649218407742296963, guid: 05cc69f7848802a4aaf63653d26b9b07,
-    type: 3}
 --- !u!1 &1842090112
 GameObject:
   m_ObjectHideFlags: 0

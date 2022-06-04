@@ -36,9 +36,9 @@ public class Shop : MonoBehaviour
 
         for (int count = 0; count < 13; count++)
         {
-            flower[count].get = gm.boolArray[count];
+            flower[count].get = gm.flower[count].get;
 
-            if (gm.boolArray[count])
+            if (gm.flower[count].get)
             {
                 flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
                 flower[count].flowerObject.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "완료";
@@ -61,12 +61,12 @@ public class Shop : MonoBehaviour
     public void GetItem(GameObject go)
     {
         go.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(255,255,255,255);
-        go.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "완료";
-        for(int count = 0; count < 13; count++)
+        for (int count = 0; count < 13; count++)
         {
             if(flower[count].flowerObject.name == go.name)
             {
-                gm.boolArray[count] = true;
+                gm.flower[count].get = true;
+                gm.flower[count].count++;
                 break;
             }
         }
