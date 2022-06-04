@@ -18,9 +18,9 @@ public class test2 : MonoBehaviour
     float px = 0, py = 0;     //꽃 위치 변수
     int rx = 0, ry =0;      //꽃 회전 변수
     int layer = 0;      //레이어 위치
-    int[] language = new int[9];    //꽃말 속성      love, happy, friendship, secret, free, narcissism, longing, consolation, thank
-    int[] color = new int[6];       //꽃 색깔 속성  rad, yellow, blue, purple, pink, white;
-    int[] season = new int[4];      //꽃 계절 속성
+    int[] language = new int[9];    //꽃말 속성      배열값 순서 :love, happy, friendship, secret, free, narcissism, longing, consolation, thank
+    int[] color = new int[6];       //꽃 색깔 속성  배열값 순서 : rad, yellow, blue, purple, pink, white;
+    int[] season = new int[4];      //꽃 계절 속성  배열값 순서: 봄,여름,가을,겨울
 
     void Start()
     {
@@ -374,9 +374,11 @@ public class test2 : MonoBehaviour
 
     }
 
+
+    //완료 버튼 누르면.....
     void btnCom_clik()
     {
-        score("language");
+        score("color");
     }
 
     void clean()  // 그냥 꽃다발을 초기화 하고 싶었을뿐인데 실패함
@@ -433,6 +435,8 @@ public class test2 : MonoBehaviour
         
     }
 
+
+    //속성 점수 계산함수
     void score(string type)
     {
         if(type == "language")
