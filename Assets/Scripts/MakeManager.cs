@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class MakeManager : MonoBehaviour
 {
-<<<<<<< HEAD:Assets/Scripts/test2.cs
     public Button btnCa, btnDa, btnDe, btnEu, btnFr, btnGl, btnJa, btnMa, btnRo, btnSs, btnSu, btnVi, btnYa, btnNext, btnCom;   //꽃 선택 버튼
     public Button btnRad, btnGreen, btnOrang, btnBlue, btnPurple;    //꽃다발 색깔 버튼
     public GameObject G_btnCa, G_btnDa, G_btnDe, G_btnEu, G_btnFr, G_btnGl, G_btnJa, G_btnMa, G_btnRo, G_btnSs, G_btnSu, G_btnVi, G_btnYa, G_btnNext, G_btnCom;
@@ -15,10 +14,8 @@ public class MakeManager : MonoBehaviour
     public GameObject radt_pre, orangt_pre, greent_pre, bluet_pre, puplet_pre, radb_pre, orangb_pre, greenb_pre, blueb_pre, pupleb_pre;
     //꽃다발 프리팹
     int max = 4;        //꽃 최대 개수
-=======
     public Button btnCa, btnDa, btnDe, btnEu, btnFr, btnGl, btnJa, btnMa, btnRo, btnSs, btnSu, btnVi, btnYa, btnArrow;
     public GameObject carnation_pre, daisy_pre, del_pre, eun_pre, freesia_pre, glra_pre, jahng_pre, marry_pre, rose_pre, ssug_pre, susun_pre, violet_pre, yang_pre;
->>>>>>> 01a067f311535ffac7914a9f54a46eadc32476fb:Assets/Scripts/MakeManager.cs
     int count = 0;      //꽃 개수
     float px = 0, py = 0;     //꽃 위치 변수
     int rx = 0, ry =0;      //꽃 회전 변수
