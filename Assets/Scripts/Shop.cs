@@ -34,21 +34,7 @@ public class Shop : MonoBehaviour
         flower[12].flowerObject = GameObject.Find("프리지아");
 
 
-        for (int count = 0; count < 13; count++)
-        {
-            flower[count].get = gm.flower[count].get;
-
-            if (gm.flower[count].get)
-            {
-                flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
-                flower[count].flowerObject.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "완료";
-            }
-            else
-            {
-                flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(20, 20, 20, 150);
-                flower[count].flowerObject.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "구입";
-            }
-        }
+        rodtls();
     }
 
     // Update is called once per frame
@@ -70,9 +56,33 @@ public class Shop : MonoBehaviour
                 break;
             }
         }
+        rodtls();
     }
     public void PushExit()
-    {
+    {/*
+        for(int count = 0; count<13; count++)
+        {
+            Debug.Log(gm.flower[count].count.ToString());
+        }*/
         SceneManager.LoadScene(1);
+    }
+
+    public void rodtls()
+    {
+        for (int count = 0; count < 13; count++)
+        {
+            flower[count].get = gm.flower[count].get;
+
+            if (gm.flower[count].get)
+            {
+                flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+                flower[count].flowerObject.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = gm.flower[count].count.ToString();
+            }
+            else
+            {
+                flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(20, 20, 20, 150);
+                flower[count].flowerObject.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "구입";
+            }
+        }
     }
 }

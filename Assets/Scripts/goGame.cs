@@ -17,13 +17,4 @@ public class goGame : MonoBehaviour
         
     }
 
-    public void goIllust()
-    {
-        SceneManager.LoadScene(4);
-    }
-
-    public void goShop()
-    {
-        SceneManager.LoadScene(0);
-    }
 }

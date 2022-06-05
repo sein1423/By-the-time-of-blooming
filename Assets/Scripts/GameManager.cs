@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
         for (int count = 0; count < 13; count++)
         {
             flower[count].get = false;
+            flower[count].count = 0;
         }
     }
 
@@ -82,8 +83,4 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    public void GameStart()
-    {
-        SceneManager.LoadScene("counter");
-    }
 }
