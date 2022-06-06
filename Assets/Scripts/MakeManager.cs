@@ -20,6 +20,9 @@ public class MakeManager : MonoBehaviour
     int[] color = new int[6];       //꽃 색깔 속성  배열값 순서 : rad, yellow, blue, purple, pink, white;
     int[] season = new int[4];      //꽃 계절 속성  배열값 순서: 봄,여름,가을,겨울
 
+
+    
+
     void Start()
     {
         
