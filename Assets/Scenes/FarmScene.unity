@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8126635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8126632}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8126635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +292,85 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &88770939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88770940}
+  - component: {fileID: 88770942}
+  - component: {fileID: 88770941}
+  m_Layer: 5
+  m_Name: DateText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &88770940
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88770939}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 613948530}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 30, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &88770941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88770939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &88770942
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88770939}
+  m_CullTransparentMesh: 1
 --- !u!1 &160037664
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 218366842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 218366839}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &218366842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,7 +874,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 301584597}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 301584594}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &301584597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,7 +1006,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 333791731}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 333791728}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &333791731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,8 +1084,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 783776552}
   - {fileID: 1714828442}
+  - {fileID: 783776552}
   - {fileID: 1128971061}
   - {fileID: 1531766316}
   - {fileID: 1517305390}
@@ -1391,7 +1518,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 88770940}
   m_Father: {fileID: 1002802768}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1519,7 +1647,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 647784759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 647784756}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &647784759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,7 +1808,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390186863}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1718,7 +1858,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 783776554}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 783776551}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &783776554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,7 +2070,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 894490799}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 894490796}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &894490799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2039,7 +2203,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 929928219}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 929928216}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &929928219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,7 +2336,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 933982024}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 933982021}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &933982024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,6 +2482,7 @@ RectTransform:
   - {fileID: 390186863}
   - {fileID: 2006085232}
   - {fileID: 613948530}
+  - {fileID: 1437626557}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2383,7 +2572,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1037894144}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1037894141}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1037894144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2504,7 +2705,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1081031795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1081031792}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1081031795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2625,7 +2838,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1108951064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1108951061}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1108951064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2824,7 +3049,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1128971063}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1128971060}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1128971063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,7 +3342,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1218805549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1218805546}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1218805549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3143,6 +3392,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218805546}
+  m_CullTransparentMesh: 1
+--- !u!1 &1294021771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294021772}
+  - component: {fileID: 1294021774}
+  - component: {fileID: 1294021773}
+  m_Layer: 5
+  m_Name: WaterText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1294021772
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294021771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2006085232}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1294021773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294021771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1294021774
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294021771}
   m_CullTransparentMesh: 1
 --- !u!1 &1376289472
 GameObject:
@@ -3226,7 +3554,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1376289475}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1376289472}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1376289475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3344,6 +3684,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422910168}
   m_CullTransparentMesh: 1
+--- !u!1 &1437626556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1437626557}
+  - component: {fileID: 1437626559}
+  - component: {fileID: 1437626558}
+  m_Layer: 5
+  m_Name: selectflower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1437626557
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437626556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1002802768}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -100, y: -40}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1437626558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437626556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1437626559
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437626556}
+  m_CullTransparentMesh: 1
 --- !u!1 &1447534036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3426,7 +3845,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1447534039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1447534036}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1447534039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3547,7 +3978,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1454893504}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1454893501}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1454893504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3667,7 +4110,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1517305392}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1517305389}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1517305392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3787,7 +4242,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1531766318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1531766315}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1531766318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3965,7 +4432,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390186863}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4015,7 +4482,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1714828444}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: ChangeFarm
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1714828441}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1714828444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,6 +4562,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297b466ee98bcf546a40d36543ad81f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  farms:
+  - {fileID: 783776551}
+  - {fileID: 1714828441}
+  - {fileID: 1128971060}
+  - {fileID: 1531766315}
+  - {fileID: 1517305389}
+  - {fileID: 647784756}
+  - {fileID: 333791728}
+  - {fileID: 1218805546}
+  - {fileID: 1037894141}
+  inFarm: {fileID: 21300000, guid: a68e38d9934658b4fac32ef2a5bddd73, type: 3}
+  notinFarm: {fileID: 21300000, guid: d23fc4b2db27d9b4cbc9569dafe9a39c, type: 3}
+  spray: {fileID: 21300000, guid: 7996848c03b7bb044bcc0f0b668e404c, type: 3}
+  selectflowertext: {fileID: 1437626558}
+  WaterCountText: {fileID: 1294021773}
+  WaterCount: 6
 --- !u!4 &1798821949
 Transform:
   m_ObjectHideFlags: 0
@@ -4266,6 +4761,7 @@ GameObject:
   - component: {fileID: 2006085232}
   - component: {fileID: 2006085234}
   - component: {fileID: 2006085233}
+  - component: {fileID: 2006085235}
   m_Layer: 5
   m_Name: Water
   m_TagString: Untagged
@@ -4283,7 +4779,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1294021772}
   m_Father: {fileID: 1002802768}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4330,6 +4827,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006085231}
   m_CullTransparentMesh: 1
+--- !u!114 &2006085235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006085231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2006085233}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: chargeWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2065750063
 GameObject:
   m_ObjectHideFlags: 0
@@ -4581,7 +5134,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2094306071}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2094306068}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2094306071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4781,7 +5346,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2114614511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1798821948}
+        m_TargetAssemblyTypeName: FarmDirector, Assembly-CSharp
+        m_MethodName: selectFlower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2114614508}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2114614511
 MonoBehaviour:
   m_ObjectHideFlags: 0
