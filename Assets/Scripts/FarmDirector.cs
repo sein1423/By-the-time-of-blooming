@@ -27,20 +27,11 @@ public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 필마운트 되�
 
     public void ChangeFarm(GameObject go)
     {
-        if(go.GetComponent<Image>().sprite != notinFarm)
+        if(selectflowertext.text != "")
         {
-            if (WaterCount > 0)
-            {
-                WaterCount--;
-                go.GetComponent<Image>().color = new Color32(150, 180, 200, 255);
-            }
+            go.GetComponent<Farm>().FarmButton(selectflowertext.text);
+        }
 
-        }
-        else
-        {
-            go.GetComponent<Image>().sprite = inFarm;
-        }
-        go.GetComponent<Farm>().FarmButton(selectflowertext.text);
     }
 
     public void selectFlower(GameObject go)

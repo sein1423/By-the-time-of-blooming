@@ -28,7 +28,15 @@ public class GameManager : MonoBehaviour
         public int count;
     }
 
+    public struct farmstate
+    {
+        public string name;
+        public int count;
+        public bool water;
+    }
+
     public flowerstate[] flower = new flowerstate[13];
+    public farmstate[] farm = new farmstate[9];
     //나중에 Int랑 속성값 추가하기
     private void Awake()
     {
@@ -54,6 +62,12 @@ public class GameManager : MonoBehaviour
         {
             flower[count].get = false;
             flower[count].count = 0;
+        }
+        for (int count = 0; count < 9; count++)
+        {
+            farm[count].name = null;
+            farm[count].water = false;
+            farm[count].count = 0;
         }
     }
 
