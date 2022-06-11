@@ -18,6 +18,7 @@ public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 필마운트 되�
     // Start is called before the first frame update
     void Start()
     {
+        WaterCountText.text = WaterCount.ToString();
         DayText.text = "Day : "+GameObject.Find("GameManager").GetComponent<GameManager>().dayCount.ToString();
     }
 

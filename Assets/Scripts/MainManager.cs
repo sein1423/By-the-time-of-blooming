@@ -20,6 +20,6 @@ public class MainManager : MonoBehaviour
     }
     public void GameStart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("counter");
     }
 }

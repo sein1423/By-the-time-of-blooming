@@ -109,6 +109,7 @@ public class GameManager : MonoBehaviour
         {
             farm[count].water = false;
         }
+        dayCount++;
     }
 
 }

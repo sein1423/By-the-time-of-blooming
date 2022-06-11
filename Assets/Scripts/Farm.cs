@@ -21,8 +21,9 @@ public class Farm : MonoBehaviour
             seedname = flowername;
             seedText.text = seedname;
             GetComponent<Image>().sprite = fd.inFarm;
+            gm.farm[FarmCount].name = seedname;
         }
-       else if(count > 1)//수확 이틀걸림
+       else if(count > 2)//수확 이틀걸림
         {
             for(int num = 0; num < 13; num++)
             {
@@ -39,7 +40,8 @@ public class Farm : MonoBehaviour
             }
             count = 0;
             seedname = null;
-            seedText.text = "";
+            gm.farm[FarmCount].name = seedname;
+            seedText.text = "비어있음";
             GetComponent<Image>().sprite = fd.notinFarm;
             GetComponent<Image>().color = new Color32(255,255,255, 255);
         }
@@ -57,6 +59,10 @@ public class Farm : MonoBehaviour
         /*Debug.Log(FarmCount);
         Debug.Log(count);
         Debug.Log(seedname);*/
+
+
+        gm.farm[FarmCount].count = this.count;
+        gm.farm[FarmCount].water = water;
     }
     // Start is called before the first frame update
     void Start()
@@ -74,6 +80,20 @@ public class Farm : MonoBehaviour
         {
             seedText.text = seedname;
         }
+
+        if (seedname != null)
+        {
+            if (water)
+            {
+                gameObject.GetComponent<Image>().sprite = fd.inFarm;
+                GetComponent<Image>().color = new Color32(150, 180, 200, 255);
+            }
+            else
+            {
+                gameObject.GetComponent<Image>().sprite = fd.inFarm;
+            }
+        }
+
 
     }
         // Update is called once per frame

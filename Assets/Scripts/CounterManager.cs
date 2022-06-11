@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class CounterManager : MonoBehaviour
 {
     GameManager gm;
+    public Text dayText;
     // Start is called before the first frame update
     void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        dayText.text = "Day : " + gm.dayCount.ToString();
     }
 
     // Update is called once per frame
@@ -23,16 +25,26 @@ public class CounterManager : MonoBehaviour
         {
             Debug.Log(gm.flower[count].count.ToString());
         }*/
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("illustrated");
     }
 
     public void goShop()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("shop");
     }
     
     public void goMake()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("make");
+    }
+
+    public void goFarm()
+    {
+        SceneManager.LoadScene("FarmScene");
+    }
+
+    public void goNextDay()
+    {
+        gm.NextDay();
     }
 }

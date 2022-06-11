@@ -52,7 +52,7 @@ public class Illustrated : MonoBehaviour
             if (flower[count].get)
             {
                 flower[count].flowerObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
-                flower[count].flowerObject.transform.GetChild(1).gameObject.GetComponent<Text>().text = gm.flower[count].count.ToString() + "개 소지";//strArray[count];
+                flower[count].flowerObject.transform.GetChild(1).gameObject.GetComponent<Text>().text = gm.flower[count].name+"\n"+gm.flower[count].count.ToString() + "개 소지";//strArray[count];
             }
             else
             {
