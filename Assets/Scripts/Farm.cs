@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.Text.RegularExpressions;
 public class Farm : MonoBehaviour
 {
-    int count = 0;
+    public int count = 0;
     string seedname = null;
     GameManager gm;
     int FarmCount;
@@ -22,9 +22,26 @@ public class Farm : MonoBehaviour
             seedText.text = seedname;
             GetComponent<Image>().sprite = fd.inFarm;
         }
-       else if(count > 2)//수확
+       else if(count > 1)//수확 이틀걸림
         {
+            for(int num = 0; num < 13; num++)
+            {
+                if(seedText.text == gm.flower[num].name)
+                {
+                    gm.flower[num].count += 3;
+                    if (!gm.flower[num].get)
+                    {
+                        gm.flower[num].get = true;
+                    }
+
+                    break;
+                }
+            }
             count = 0;
+            seedname = null;
+            seedText.text = "";
+            GetComponent<Image>().sprite = fd.notinFarm;
+            GetComponent<Image>().color = new Color32(255,255,255, 255);
         }
         else//물주기
         {

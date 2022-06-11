@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     public flowerstate[] flower = new flowerstate[13];
     public farmstate[] farm = new farmstate[9];
+    public int dayCount = 1;
     //나중에 Int랑 속성값 추가하기
     private void Awake()
     {
@@ -56,8 +57,20 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+
+        flower[0].name = "글라디올러스";
+        flower[1].name = "데이지";
+        flower[2].name = "델피늄";
+        flower[3].name = "바이올렛";
+        flower[4].name = "수선화";
+        flower[5].name = "메리골드";
+        flower[6].name = "쑥부쟁이";
+        flower[7].name = "양귀비";
+        flower[8].name = "은방울꽃";
+        flower[9].name = "자홍색 국화";
+        flower[10].name = "장미";
+        flower[11].name = "카네이션";
+        flower[12].name = "프리지아";
         for (int count = 0; count < 13; count++)
         {
             flower[count].get = false;
@@ -70,13 +83,6 @@ public class GameManager : MonoBehaviour
             farm[count].count = 0;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
 
     private void OnEnable()
@@ -95,6 +101,14 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    public void NextDay()
+    {
+        for(int count = 0; count < 9; count++)
+        {
+            farm[count].water = false;
+        }
     }
 
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FarmDirector : MonoBehaviour //½Ã°£¿¡ µû¶ó ÇØ ÀÌ¹ÌÁö°¡ ÇÊ¸¶¿îÆ® µÇ¸é¼­ ¾Æ·¡ ÀÖ´Â °ËÀº ÇØ(´Þ)ÀÌ º¸¿©Áö´Â ÄÚµåÀÎµ¥ ½Ã°£ÀÌ¶û ÀÌ¹ÌÁö¶û ¿¬°á ¾ÈµÇÀÖÀ½
 {
@@ -10,19 +11,14 @@ public class FarmDirector : MonoBehaviour //½Ã°£¿¡ µû¶ó ÇØ ÀÌ¹ÌÁö°¡ ÇÊ¸¶¿îÆ® µÇ¸
     //public GameObject[] flowerButton = new GameObject[13];
     public Text selectflowertext;
     public Text WaterCountText;
+    public Text DayText;
     public int WaterCount = 6;
     public bool select = false;
 
     // Start is called before the first frame update
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        WaterCountText.text = WaterCount.ToString();
+        DayText.text = "Day : "+GameObject.Find("GameManager").GetComponent<GameManager>().dayCount.ToString();
     }
 
     public void ChangeFarm(GameObject go)
@@ -30,6 +26,7 @@ public class FarmDirector : MonoBehaviour //½Ã°£¿¡ µû¶ó ÇØ ÀÌ¹ÌÁö°¡ ÇÊ¸¶¿îÆ® µÇ¸
         if(selectflowertext.text != "")
         {
             go.GetComponent<Farm>().FarmButton(selectflowertext.text);
+            WaterCountText.text = WaterCount.ToString();
         }
 
     }
@@ -43,5 +40,10 @@ public class FarmDirector : MonoBehaviour //½Ã°£¿¡ µû¶ó ÇØ ÀÌ¹ÌÁö°¡ ÇÊ¸¶¿îÆ® µÇ¸
     public void chargeWater()
     {
         WaterCount = 6;
+    }
+
+    public void GoCounter()
+    {
+        SceneManager.LoadScene("counter");
     }
 }
