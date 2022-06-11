@@ -4,10 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Farm : MonoBehaviour
 {
-    float count;
-    public void FarmButton()
+    int count = 0;
+    string name = null;
+
+    public void FarmButton(string flowername)
     {
-       //¹ç ¹öÆ°ÀÌ ´­·ÈÀ» ‹š
+       if(count == 0)
+        {
+            count = 1;
+            this.name = flowername;
+        }
+       else if(count > 2)
+        {
+            count = 0;
+        }
+        else
+        {
+            count++;
+        }
+
     }
     // Start is called before the first frame update
     void Start()
@@ -18,7 +33,7 @@ public class Farm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Button button = GetComponent<Button>(); 
+        
 
     }
 }

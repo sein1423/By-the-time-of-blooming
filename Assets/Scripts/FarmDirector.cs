@@ -40,6 +40,7 @@ public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 필마운트 되�
         {
             go.GetComponent<Image>().sprite = inFarm;
         }
+        go.GetComponent<Farm>().FarmButton(selectflowertext.text);
     }
 
     public void selectFlower(GameObject go)
