@@ -34,5 +34,5 @@ public class CounterManager : MonoBehaviour
     public void goMake()
     {
         SceneManager.LoadScene(3);
-    }
+    }//손놈 스포너 만들어야함
 }
