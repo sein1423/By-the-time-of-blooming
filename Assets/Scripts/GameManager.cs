@@ -20,8 +20,14 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
-
+    public float money = 0;
     public Illustrated illust;
+    public struct bouquet 
+    {
+        public string lang;
+        public string color;
+        public string season;
+    }
     public struct flowerstate{
         public string name;
         public bool get;
@@ -35,6 +41,7 @@ public class GameManager : MonoBehaviour
         public bool water;
     }
 
+    public bouquet bou1 = new bouquet { lang = "", color = "", season = ""};
     public flowerstate[] flower = new flowerstate[13];
     public farmstate[] farm = new farmstate[9];
     public int dayCount = 1;

@@ -7,6 +7,7 @@ public class CounterManager : MonoBehaviour
 {
     GameManager gm;
     public Text dayText;
+    public Text moneyText;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class CounterManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        moneyText.text = gm.money.ToString() + " $";
     }
     public void goIllust()
     {/*
