@@ -59,7 +59,7 @@ public class MakeManager : MonoBehaviour
        
         
         
-        
+        //꽃 소지개수에 
         
 
     }
