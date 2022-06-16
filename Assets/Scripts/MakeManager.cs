@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MakeManager : MonoBehaviour
 {
@@ -16,16 +17,16 @@ public class MakeManager : MonoBehaviour
     float px = 0, py = 0;     //꽃 위치 변수
     int rx = 0, ry =0;      //꽃 회전 변수
     int layer = 0;      //레이어 위치
-    int[] language = new int[9];    //꽃말 속성      배열값 순서 :love, happy, friendship, secret, free, narcissism, longing, consolation, thank
-    int[] color = new int[6];       //꽃 색깔 속성  배열값 순서 : rad, yellow, blue, purple, pink, white;
-    int[] season = new int[4];      //꽃 계절 속성  배열값 순서: 봄,여름,가을,겨울
-
+    int[] language = new int[9] { 0,0,0,0,0,0,0,0,0};    //꽃말 속성      배열값 순서 :love, happy, friendship, secret, free, narcissism, longing, consolation, thank
+    int[] color = new int[6] { 0,0,0,0,0,0};       //꽃 색깔 속성  배열값 순서 : rad, yellow, blue, purple, pink, white;
+    int[] season = new int[4] {0,0,0,0};      //꽃 계절 속성  배열값 순서: 봄,여름,가을,겨울
+    GameManager gm;
 
     
 
     void Start()
     {
-        
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         
          //꽃 선택 버튼
@@ -72,13 +73,14 @@ public class MakeManager : MonoBehaviour
 
      void btnCa_clik()      //카네이션 버튼 클릭 함수
     {
-        if(count <= max){
+        if(count <= max && gm.flower[11].count>0){
             Debug.Log("카네이션");
             GameObject carnation = Instantiate(carnation_pre) as GameObject;        //카네이션 오브젝트 생성
             pos(count);     //꽃 위치 정하기
             carnation.transform.position = new Vector3(px,py,0);        //카네이션 위치
             carnation.transform.SetSiblingIndex(layer);                 //카네이션 레이어 위치 였는데 안댐...
             count++;
+            gm.flower[11].count--;
             //속성
             language[8]++;
             color[0]++;
@@ -89,13 +91,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnDa_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[1].count > 0)
+        {
             Debug.Log("데이지");
             GameObject dai = Instantiate(daisy_pre) as GameObject;
             pos(count);
             dai.transform.position = new Vector3(px,py,0);
             dai.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[1].count--;
             //속성
             language[0]++;
             color[5]++;
@@ -106,13 +110,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnDe_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[2].count > 0)
+        {
             Debug.Log("델피니움");
             GameObject del = Instantiate(del_pre) as GameObject;
             pos(count);
             del.transform.position = new Vector3(px,py,0);
             del.transform.SetSiblingIndex(layer);
-            count++;
+            count++; 
+            gm.flower[2].count--;
             //속성
             language[4]++;
             color[2]++;
@@ -123,13 +129,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnEu_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[8].count > 0)
+        {
             Debug.Log("은방울꽃");
             GameObject eun = Instantiate(eun_pre) as GameObject;
             pos(count);
             eun.transform.position = new Vector3(px,py,0);
             eun.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[8].count--;
             //속성
             language[1]++;
             color[5]++;
@@ -142,13 +150,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnFr_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[12].count > 0)
+        {
             Debug.Log("프리지아");
             GameObject fre = Instantiate(freesia_pre) as GameObject;
             pos(count);
             fre.transform.position = new Vector3(px,py,0);
             fre.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[12].count--;
             //속성
             language[2]++;
             color[1]++;
@@ -163,13 +173,15 @@ public class MakeManager : MonoBehaviour
 
     void btnGl_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[0].count > 0)
+        {
             Debug.Log("글라디올러스");
             GameObject glr = Instantiate(glra_pre) as GameObject;
             pos(count);
             glr.transform.position = new Vector3(px,py,0);
             glr.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[0].count--;
             //속성
             language[3]++;
             color[0]++;
@@ -180,13 +192,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnJa_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[9].count > 0)
+        {
             Debug.Log("자홍색 국화");
             GameObject jah = Instantiate(jahng_pre) as GameObject;
             pos(count);
             jah.transform.position = new Vector3(px,py,0);
             jah.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[9].count--;
             //속성
             language[0]++;
             color[4]++;
@@ -197,13 +211,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnMa_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[5].count > 0)
+        {
             Debug.Log("메리골드");
             GameObject mar = Instantiate(marry_pre) as GameObject;
             pos(count);
             mar.transform.position = new Vector3(px,py,0);
             mar.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[5].count--;
             //속성
             language[1]++;
             color[1]++;
@@ -214,13 +230,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnRo_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[10].count > 0)
+        {
             Debug.Log("장미");
             GameObject ros = Instantiate(rose_pre) as GameObject;
             pos(count);
             ros.transform.position = new Vector3(px,py,0);
             ros.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[10].count--;
             //속성
             language[0]++;
             color[0]++;
@@ -231,13 +249,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnSs_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[6].count > 0)
+        {
             Debug.Log("쑥부쟁이");
             GameObject Ssu = Instantiate(ssug_pre) as GameObject;
             pos(count);
             Ssu.transform.position = new Vector3(px,py,0);
             Ssu.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[6].count--;
             //속성
             language[6]++;
             color[3]++;
@@ -252,13 +272,15 @@ public class MakeManager : MonoBehaviour
 
     void btnSu_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[4].count > 0)
+        {
             Debug.Log("수선화");
             GameObject sus = Instantiate(susun_pre) as GameObject;
             pos(count);
             sus.transform.position = new Vector3(px,py,0);
             sus.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[4].count--;
             //속성
             language[5]++;
             color[1]++;
@@ -269,13 +291,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnVi_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[3].count > 0)
+        {
             Debug.Log("바이올렛");
             GameObject vio = Instantiate(violet_pre) as GameObject;
             pos(count);
             vio.transform.position = new Vector3(px,py,0);
             vio.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[3].count--;
             //속성
             language[2]++;
             color[3]++;
@@ -286,13 +310,15 @@ public class MakeManager : MonoBehaviour
     }
     void btnYa_clik()
     {
-        if(count <= max){
+        if(count <= max && gm.flower[7].count > 0)
+        {
             Debug.Log("양귀비");
             GameObject yan = Instantiate(yang_pre) as GameObject;
             pos(count);
             yan.transform.position = new Vector3(px,py,0);
             yan.transform.SetSiblingIndex(layer);
             count++;
+            gm.flower[7].count--;
             //속성
             language[7]++;
             color[0]++;
@@ -379,23 +405,7 @@ public class MakeManager : MonoBehaviour
     //완료 버튼 누르면.....
     void btnCom_clik()
     {
-        score("color");
-    }
-
-    void clean()  // 그냥 꽃다발을 초기화 하고 싶었을뿐인데 실패함
-    {
-        bool cleans = false;
-        radt_pre.SetActive(cleans);
-        radb_pre.SetActive(cleans);
-        orangb_pre.SetActive(cleans);
-        orangt_pre.SetActive(cleans);
-        greenb_pre.SetActive(cleans);
-        greent_pre.SetActive(cleans);
-        blueb_pre.SetActive(cleans);
-        bluet_pre.SetActive(cleans);
-        pupleb_pre.SetActive(cleans);
-        puplet_pre.SetActive(cleans);
-
+        score();
     }
 
         
@@ -438,16 +448,16 @@ public class MakeManager : MonoBehaviour
 
 
     //속성 점수 계산함수
-    void score(string type)
+    void score()
     {
-        if(type == "language")
+        if(true)
         {
             for(int i = 0; i < 9; i++)
             {
                 max = 0;
                 if(language[i] > max)
                 {
-                    max = i;
+                    max = language[i];
                 }
             }
 
@@ -488,14 +498,15 @@ public class MakeManager : MonoBehaviour
                 Debug.Log("축하 속성");
             }
         }
-        else if(type == "color")
+
+        if(true)
         {
             for(int i = 0; i < 6; i++)
             {
                 max = 0;
                 if(color[i] > max)
                 {
-                    max = i;
+                    max = color[i];
                 }
             }
 
@@ -524,14 +535,15 @@ public class MakeManager : MonoBehaviour
                 Debug.Log("하양 속성");
             }
         }
-        else if(type == "season")
+
+        if(true)
         {
             for(int i = 0; i < 4; i++)
             {
                 max = 0;
                 if(season[i] > max)
                 {
-                    max = i;
+                    max = season[i];
                 }
             }
 
@@ -552,5 +564,7 @@ public class MakeManager : MonoBehaviour
                 Debug.Log("겨울 속성");
             }
         }
+
+        SceneManager.LoadScene("counter");
     }
 }

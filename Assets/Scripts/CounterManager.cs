@@ -35,7 +35,6 @@ public class CounterManager : MonoBehaviour
     
     public void goMake()
     {
-<<<<<<< HEAD
         SceneManager.LoadScene("make");
     }
 
@@ -47,9 +46,6 @@ public class CounterManager : MonoBehaviour
     public void goNextDay()
     {
         gm.NextDay();
-    }
-=======
         SceneManager.LoadScene(3);
     }//손놈 스포너 만들어야함
->>>>>>> 74e524069d4f99d78b17226c92554c9f4c6f2892
 }
