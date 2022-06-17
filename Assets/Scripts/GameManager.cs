@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
-    public float money = 0;
+    public int money = 50;
     public Illustrated illust;
     public bool ordercom = true;
     public int randomOrder;

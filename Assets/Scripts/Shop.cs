@@ -46,6 +46,8 @@ public class Shop : MonoBehaviour
 
     public void GetItem(GameObject go)
     {
+        if (gm.money < 1) return;
+        else gm.money -= 1;
         go.transform.GetChild(0).gameObject.GetComponent<Image>().color = new Color32(255,255,255,255);
         for (int count = 0; count < 13; count++)
         {

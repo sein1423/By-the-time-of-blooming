@@ -41,11 +41,16 @@ public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 필마운트 되�
     public void chargeWater()
     {
         WaterCount = 6;
-        WaterCountText.text = WaterCount.ToString();
     }
 
     public void GoCounter()
     {
         SceneManager.LoadScene("counter");
+    }
+
+    private void Update()
+    {
+
+        WaterCountText.text = WaterCount.ToString();
     }
 }
