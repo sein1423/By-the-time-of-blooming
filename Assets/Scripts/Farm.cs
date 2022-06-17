@@ -15,8 +15,10 @@ public class Farm : MonoBehaviour
 
     public void FarmButton(string flowername)
     {
+        Debug.Log(this.water.ToString());
         if (count == 0)//¾¾»Ñ¸®±â
         {
+            Debug.Log("if¹® µé¾î¿È");
             count = 1;
             seedname = flowername;
             seedText.text = seedname;
@@ -25,7 +27,8 @@ public class Farm : MonoBehaviour
         }
        else if(count > 2)//¼öÈ® ÀÌÆ²°É¸²
         {
-            for(int num = 0; num < 13; num++)
+            Debug.Log("else if¹® µé¾î¿È");
+            for (int num = 0; num < 13; num++)
             {
                 if(seedText.text == gm.flower[num].name)
                 {
@@ -47,8 +50,10 @@ public class Farm : MonoBehaviour
         }
         else//¹°ÁÖ±â
         {
+            Debug.Log("else¹® µé¾î¿È");
             if (fd.WaterCount > 0 && !this.water)
             {
+                Debug.Log("ÇÔ¼ö µé¾î¿È");
                 fd.WaterCount--;
                 GetComponent<Image>().color = new Color32(150, 180, 200, 255);
                 GetComponent<Farm>().water = true;
@@ -56,6 +61,7 @@ public class Farm : MonoBehaviour
                 water = true;
             }
         }
+        Debug.Log(this.water.ToString());
         /*Debug.Log(FarmCount);
         Debug.Log(count);
         Debug.Log(seedname);*/

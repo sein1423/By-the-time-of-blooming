@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FarmScene.unity
     guid: 3fab3e3620fdc0043a4dd2063c3cd272
+  - enabled: 1
+    path: Assets/Scenes/NextDay.unity
+    guid: ff5c885d184fec34db7817824838fdea
   m_configObjects: {}

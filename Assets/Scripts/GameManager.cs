@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     }
     public float money = 0;
     public Illustrated illust;
+    public bool ordercom = true;
+    public int randomOrder;
     public struct bouquet 
     {
         public string lang;
@@ -117,6 +119,7 @@ public class GameManager : MonoBehaviour
             farm[count].water = false;
         }
         dayCount++;
+        ordercom = true;
     }
 
 }

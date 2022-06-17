@@ -24,7 +24,7 @@ public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 필마운트 되�
 
     public void ChangeFarm(GameObject go)
     {
-        if(selectflowertext.text != "")
+        if(selectflowertext.text != "" || go.GetComponent<Image>().sprite != notinFarm)
         {
             go.GetComponent<Farm>().FarmButton(selectflowertext.text);
             WaterCountText.text = WaterCount.ToString();
@@ -41,6 +41,7 @@ public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 필마운트 되�
     public void chargeWater()
     {
         WaterCount = 6;
+        WaterCountText.text = WaterCount.ToString();
     }
 
     public void GoCounter()

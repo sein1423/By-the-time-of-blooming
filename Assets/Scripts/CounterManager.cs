@@ -47,6 +47,6 @@ public class CounterManager : MonoBehaviour
     public void goNextDay()
     {
         gm.NextDay();
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("NextDay");
     }//손놈 스포너 만들어야함
 }
