@@ -67,7 +67,7 @@ public class orderSpawner : MonoBehaviour
             ordercom = false;
             randomOrder = Random.Range(0, orders.Length);
         }
-
+        //주문창수정
         if (!ordercom)
         {
             newOrder();
