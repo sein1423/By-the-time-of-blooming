@@ -29,26 +29,26 @@ public class orderSpawner : MonoBehaviour
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         orderObject.SetActive(!gm.ordercom);
-        orders[0].state = "ÆÄ¶õ ²ÉÀ¸·Î ¸ğ¾Æ ÁÖ¼¼¿ä";
+        orders[0].state = "íŒŒë€ ê½ƒìœ¼ë¡œ ëª¨ì•„ ì£¼ì„¸ìš”";
         orders[0].lang = null;
         orders[0].color = "blue";
         orders[0].season = null;
 
-        orders[1].state = "¿©¸§¿¡ ÇÇ´Â ²ÉÀ¸·Î ÁÖ¼¼¿ä";
+        orders[1].state = "ì—¬ë¦„ì— í”¼ëŠ” ê½ƒìœ¼ë¡œ ì£¼ì„¸ìš”";
         orders[1].lang = null;
         orders[1].color = null;
         orders[1].season = "summer";
 
-        orders[2].state = "²É¸»ÀÌ »ç¶ûÀÎ ²ÉÀ¸·Î ÁÖ¼¼¿ä";
-        orders[2].lang = "»ç¶û";
+        orders[2].state = "ê½ƒë§ì´ ì‚¬ë‘ì¸ ê½ƒìœ¼ë¡œ ì£¼ì„¸ìš”";
+        orders[2].lang = "ì‚¬ë‘";
         orders[2].color = null;
         orders[2].season = null;
 
-        orders[3].state = "ÇÁ¸®¹Ì¾ö 5¼ÛÀÌ ÁÖ¼¼¿ä"; 
-        orders[3].lang = "¿ìÁ¤";
+        orders[3].state = "í”„ë¦¬ë¯¸ì—„ 5ì†¡ì´ ì£¼ì„¸ìš”"; 
+        orders[3].lang = "ìš°ì •";
         orders[3].color = "yellow";
         orders[3].season = "spring";
-
+//ë‚˜ì¤‘ì— ë°ì´í„°ë² ì´ìŠ¤ë¡œ ëºì‹œë‹¤...
 
     }
 
@@ -62,7 +62,7 @@ public class orderSpawner : MonoBehaviour
             gm.ordercom = false;
             gm.randomOrder = Random.Range(0, orders.Length);
         }
-        //ÁÖ¹®Ã¢¼öÁ¤
+        //ì£¼ë¬¸ì°½ìˆ˜ì •
         if (!gm.ordercom)
         {
             newOrder();
