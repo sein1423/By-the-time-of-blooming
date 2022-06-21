@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-public class FarmDirector : MonoBehaviour //½Ã°£¿¡ µû¶ó ÇØ ÀÌ¹ÌÁö°¡ ÇÊ¸¶¿îÆ® µÇ¸é¼­ ¾Æ·¡ ÀÖ´Â °ËÀº ÇØ(´Ş)ÀÌ º¸¿©Áö´Â ÄÚµåÀÎµ¥ ½Ã°£ÀÌ¶û ÀÌ¹ÌÁö¶û ¿¬°á ¾ÈµÇÀÖÀ½
+//ã…ã…‡
+public class FarmDirector : MonoBehaviour //ì‹œê°„ì— ë”°ë¼ í•´ ì´ë¯¸ì§€ê°€ í•„ë§ˆìš´íŠ¸ ë˜ë©´ì„œ ì•„ë˜ ìˆëŠ” ê²€ì€ í•´(ë‹¬)ì´ ë³´ì—¬ì§€ëŠ” ì½”ë“œì¸ë° ì‹œê°„ì´ë‘ ì´ë¯¸ì§€ë‘ ì—°ê²° ì•ˆë˜ìˆìŒ
 {
     public GameObject[] farms = new GameObject[9];
     public Sprite inFarm, notinFarm,spray;
