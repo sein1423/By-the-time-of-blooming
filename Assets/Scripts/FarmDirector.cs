@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-//ㅎㅇ
+//ㅎㅇ111
 public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 필마운트 되면서 아래 있는 검은 해(달)이 보여지는 코드인데 시간이랑 이미지랑 연결 안되있음
 {
     public GameObject[] farms = new GameObject[9];
