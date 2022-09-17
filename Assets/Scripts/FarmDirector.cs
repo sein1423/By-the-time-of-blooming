@@ -15,7 +15,7 @@ public class FarmDirector : MonoBehaviour //시간에 따라 해 이미지가 �
     public int WaterCount = 6;
     public bool select = false;
 
-    // Start is called before the first frame update123456
+    // Start is called before the first frame update123456789
     void Start()
     {
         WaterCountText.text = WaterCount.ToString();
